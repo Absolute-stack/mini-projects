@@ -1,14 +1,20 @@
 let num = 0;
 
-const increaseBtn = document.querySelector('.increase-btn');
-const resetBtn = document.querySelector('.reset-btn');
-const decreaseBtn = document.querySelector('.decrease-btn');
 const number = document.querySelector('p');
+const container = document.querySelector('.btn-container');
+
 number.textContent = num;
 
-increaseBtn.addEventListener('click', increase);
-decreaseBtn.addEventListener('click', decrease);
-resetBtn.addEventListener('click', reset);
+// Single event listener using event delegation
+container.addEventListener('click', function (e) {
+  if (e.target.classList.contains('increase-btn')) {
+    increase();
+  } else if (e.target.classList.contains('decrease-btn')) {
+    decrease();
+  } else if (e.target.classList.contains('reset-btn')) {
+    reset();
+  }
+});
 
 function increase() {
   num = num + 1;
