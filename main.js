@@ -1,27 +1,26 @@
-const colors = [
-  '#B3C12D',
-  '#2DC186',
-  '#3C2DC1',
-  '#C12D68',
-  '#918847',
-  '#475091',
-  '#47F6D7',
-  '#4767F6',
-  '#F6D647',
-  '#EE8DD1',
-  '#A41C29',
-];
+let num = 0;
 
-function randomColorGenerator(arr) {
-  return arr[Math.floor(Math.random() * arr.length)];
+const increaseBtn = document.querySelector('.increase-btn');
+const resetBtn = document.querySelector('.reset-btn');
+const decreaseBtn = document.querySelector('.decrease-btn');
+const number = document.querySelector('p');
+number.textContent = num;
+
+increaseBtn.addEventListener('click', increase);
+decreaseBtn.addEventListener('click', decrease);
+resetBtn.addEventListener('click', reset);
+
+function increase() {
+  num = num + 1;
+  return (number.textContent = num);
 }
 
-const btn = document.querySelector('button');
-btn.addEventListener('click', () => {
-  document.documentElement.style.setProperty(
-    '--color',
-    randomColorGenerator(colors)
-  );
-  const hex = document.querySelector('.hex-code');
-  hex.textContent = randomColorGenerator(colors);
-});
+function decrease() {
+  num = num - 1;
+  return (number.textContent = num);
+}
+
+function reset() {
+  num = 0;
+  return (number.textContent = num);
+}

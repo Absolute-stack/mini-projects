@@ -1,128 +1,53 @@
-/* Root */
-:root {
-  --color: #da2020;
-}
-
-/* reset */
-
 *,
-*::before,
-*::after {
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  display: inline-block;
-  text-decoration: none;
-  color: var(--clr-neutral-900);
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  border-radius: var(--br);
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-body,
 h1,
-h2,
-h3,
-h4,
 p {
   margin: 0;
+  line-height: 1;
 }
 
-/* Utility classes */
-
-.flex {
-  display: flex;
-  justify-content: space-around;
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-size: 1rem;
+  background-color: white;
+  height: 100vh;
 }
 
-.gap {
-  gap: 0.5rem;
-}
-
-.lightblue {
-  color: rgb(116, 192, 215);
-}
-
-.lightgrey {
-  color: rgb(82, 82, 82);
-}
-
-.container {
+main {
   max-width: 60rem;
   margin: 0 auto;
-}
-
-.container-1 {
-  max-width: 41.5rem;
-  margin: 0 auto;
-}
-
-.flow > * + * {
-  margin-top: 2rem;
-}
-
-section {
-  padding: 3rem 0;
-}
-
-.center {
+  margin-top: 20vh;
   text-align: center;
 }
 
-/* General Styling */
-
-body {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 1.5rem;
-  background-color: var(--color);
-  color: var(--color);
-}
-
-nav {
-  background-color: white;
-  padding: 1rem 2rem;
-  cursor: pointer;
-}
-
-.hero {
-  margin-top: 30vh;
+.flow > * + * {
+  margin-bottom: 2rem;
 }
 
 h1 {
-  line-height: 1.6;
-  background-color: black;
-  color: white;
-  border: none;
-  border-radius: 1rem;
+  font-size: 72px;
+  text-transform: uppercase;
+  color: lightgrey;
+}
+
+p {
+  font-size: 15rem;
+  font-weight: 800;
+  color: lightgrey;
 }
 
 button {
+  margin-left: 2rem;
+  font-family: inherit;
+  line-height: 1.6;
   background-color: inherit;
-  color: black;
-  border: 1px solid black;
-  border-radius: 0.5rem;
-  padding: 0.5rem 1rem;
+  border: 2px solid lightgrey;
+  border-radius: 0.7rem;
+  padding: 0.3rem 2rem;
   cursor: pointer;
-}
-
-.hex-code {
-  color: var(--color);
 }
