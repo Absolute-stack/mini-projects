@@ -1,0 +1,20 @@
+{
+  "name": "mini-projects",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Absolute-stack/mini-projects.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Absolute-stack/mini-projects/issues"
+  },
+  "homepage": "https://github.com/Absolute-stack/mini-projects#readme",
+  "description": ""
+}
