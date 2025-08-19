@@ -1,0 +1,121 @@
+/* Root */
+:root {
+  --color: #da2020;
+}
+
+/* reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--br);
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+/* Utility classes */
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.gap {
+  gap: 0.5rem;
+}
+
+.lightblue {
+  color: rgb(116, 192, 215);
+}
+
+.lightgrey {
+  color: rgb(82, 82, 82);
+}
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.container-1 {
+  max-width: 41.5rem;
+  margin: 0 auto;
+}
+
+.flow > * + * {
+  margin-top: 2rem;
+}
+
+section {
+  padding: 3rem 0;
+}
+
+.center {
+  text-align: center;
+}
+
+/* General Styling */
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.5rem;
+  background-color: var(--color);
+  color: var(--color);
+}
+
+nav {
+  background-color: white;
+  padding: 2rem 0.5rem;
+  cursor: pointer;
+}
+
+.hero {
+  margin-top: 30vh;
+}
+
+h1 {
+  line-height: 1.6;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+}
+
+button {
+  background-color: inherit;
+  color: black;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.hex-code {
+  color: var(--color);
+}
