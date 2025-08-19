@@ -17,6 +17,12 @@ ul {
   margin: 0;
 }
 
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--clr-neutral-900);
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -92,7 +98,7 @@ body {
 
 nav {
   background-color: white;
-  padding: 2rem 0.5rem;
+  padding: 1rem 2rem;
   cursor: pointer;
 }
 
@@ -114,6 +120,7 @@ button {
   border: 1px solid black;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
+  cursor: pointer;
 }
 
 .hex-code {

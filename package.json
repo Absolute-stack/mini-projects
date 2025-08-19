@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
     "url": "https://github.com/Absolute-stack/mini-projects/issues"
   },
   "homepage": "https://github.com/Absolute-stack/mini-projects#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "jest": "^30.0.5"
+  }
 }
