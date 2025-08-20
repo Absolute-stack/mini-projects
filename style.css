@@ -46,6 +46,11 @@ section {
   margin-top: 0.4rem;
 }
 
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
 /* General Body Styles */
 
 body {
