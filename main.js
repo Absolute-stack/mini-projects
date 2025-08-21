@@ -1,11 +1,11 @@
-const openModalBtn = document.querySelector('button');
-const closeBtn = document.querySelector('.close-btn');
-const modal = document.querySelector('.modal');
+const container = document.querySelector('.hero-container');
+const modal = document.querySelector('.modal-container');
 
-openModalBtn.addEventListener('click', () => {
-  modal.toggleAttribute('hidden');
-});
-
-closeBtn.addEventListener('click', () => {
-  modal.setAttribute('hidden', '');
+container.addEventListener('click', (e) => {
+  console.log(e.target.classList);
+  if (e.target.classList.contains('open-btn')) {
+    modal.classList.add('show-modal');
+  } else if (e.target.classList.contains('close-btn')) {
+    modal.classList.remove('show-modal');
+  }
 });

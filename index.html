@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modal</title>
+    <link rel="shortcut icon" href="hero.jpeg" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
@@ -11,28 +12,26 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="shortcut icon"
-      href="/representation-user-experience-interface-design.avif"
-      type="image/x-icon"
-    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="hero">
-      <div class="hero-content flow">
-        <h1>Modal Project</h1>
-        <button>Open Modal</button>
+    <div class="hero-container wrapper">
+      <div class="hero">
+        <h1>Model Project</h1>
+        <button class="open-btn">Open Model</button>
       </div>
-      <div class="modal" hidden>
-        <i class="fa-solid fa-circle-xmark close-btn"></i>
-        <h2>Modal Content</h2>
+      <div class="modal-container">
+        <div class="modal">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa cum
+            mollitia et? Distinctio delectus similique, nihil incidunt quia sint
+            placeat explicabo deserunt, tempore possimus quisquam eos eaque sunt
+            facilis ipsam?
+          </p>
+          <button>
+            <i class="fa-solid fa-circle-xmark close-btn"></i>
+          </button>
+        </div>
       </div>
     </div>
     <script src="main.js"></script>
