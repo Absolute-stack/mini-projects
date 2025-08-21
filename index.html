@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Nav</title>
+    <title>Sidebar</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
@@ -17,52 +17,25 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="navbar.jpg" type="image/x-icon" />
+    <link rel="shortcut icon" href="/6388015.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
-      <ul class="flex between">
-        <div class="nav-right">
-          <li>
-            <a href="#"><img src="logo.svg" alt="" /></a>
-          </li>
-        </div>
-        <div class="nav-mid flex hideOnPhone">
+    <i class="fa-solid fa-bars toggle-btn"></i>
+    <aside class="">
+      <div class="flex">
+        <img src="logo.svg" alt="" />
+        <i class="fa-solid fa-circle-xmark close-btn"></i>
+      </div>
+      <div>
+        <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Projects</a></li>
-          <li><a href="#">Contacts</a></li>
-        </div>
-        <div class="nav-right flex">
-          <li class="hideOnPhone">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-          </li>
-          <li class="hideOnPhone">
-            <a href="#"><i class="fa-brands fa-discord"></i></a>
-          </li>
-          <li class="hideOnPhone">
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-          </li>
-          <li class="hideOnPhone">
-            <a href="#"><i class="fa-brands fa-twitch"></i></a>
-          </li>
-          <li>
-            <a href="#"
-              ><i class="fa-solid fa-bars toggle-btn hide showOnPhone"></i
-            ></a>
-          </li>
-        </div>
-      </ul>
-    </nav>
-    <div class="nav-phone hideOndesktop" hidden>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contacts</a></li>
-      </ul>
-    </div>
+          <li><a href="#">Contants</a></li>
+        </ul>
+      </div>
+    </aside>
     <script src="main.js"></script>
   </body>
 </html>

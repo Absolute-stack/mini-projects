@@ -1,104 +1,90 @@
-/* Reset */
+/* reset */
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 ul {
   list-style: none;
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
 }
 
 a {
-  display: inline-block;
   text-decoration: none;
-  margin-left: 1rem;
+  color: hsl(210, 22%, 49%);
 }
 
-/* Utility Classes */
-
+/* Utility classes */
 .flex {
   display: flex;
-}
-.between {
-  justify-content: space-around;
-}
-.gap {
-  padding-left: 1rem;
-}
-.hide {
-  display: none;
-}
-
-/* Geeral Styling */
-
-body {
-  margin: 0;
-  padding: 0;
-  background-color: hsl(205, 100%, 96%);
-  font-family: 'Playfair Display', serif;
-  font-size: 1rem;
-}
-
-nav {
-  background-color: white;
-}
-
-ul {
-  display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
-.nav-mid a {
-  color: #102a42;
-}
-.nav-mid a:hover {
-  color: #49a6e9;
+.show-sidebar {
+  transform: translateX(0);
+  opacity: 1;
 }
 
-.nav-right {
-  font-size: 1.5 rem;
-}
-.nav-right a {
-  color: #49a6e9;
+/* General styling */
+
+body {
+  font-family: 'playfair Display', serif;
+  font-size: 1.5rem;
+  background-color: #ebf7ff;
+  min-height: 100vh;
 }
 
-.nav-phone ul {
-  width: 100%;
+aside {
+  padding: 1rem 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 100vh;
+  background-color: white;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  background-color: white;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all ease 1s;
 }
 
-.nav-phone a {
-  color: #102a42;
-}
-
-.nav-phone li:hover {
+aside li {
   width: 100%;
-  background-color: #49a6e933;
+  padding: 1rem 1rem;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 1s;
 }
 
-.hide-desktop {
-  display: none;
+aside li:hover {
+  background-color: #49a6e924;
+  transform: translateX(0.2rem);
 }
 
-@media screen and (max-width: 900px) {
-  .between {
-    justify-content: space-between;
-  }
+.toggle-btn {
+  margin-left: 95vw;
+  color: #49a6e9;
+  cursor: pointer;
+  transition: all ease 1s;
+}
 
-  .hideOnPhone {
-    display: none;
-  }
+.toggle-btn:hover {
+  color: rgb(156, 155, 155);
+  transform: rotate(90deg);
+}
 
-  .showOnPhone {
-    display: inline-block;
-  }
+.close-btn {
+  cursor: pointer;
+  color: red;
+  transition: all ease 0.5s;
+}
+
+.close-btn:hover {
+  color: rgb(156, 155, 155);
+  transform: rotate(90deg);
 }

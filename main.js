@@ -1,14 +1,10 @@
+const sidebar = document.querySelector('aside');
 const toggleBtn = document.querySelector('.toggle-btn');
-const navPhone = document.querySelector('.nav-phone'); // Move this outside so it's accessible
+const closeBtn = document.querySelector('.close-btn');
 
-toggleBtn.addEventListener('click', () => {
-  navPhone.toggleAttribute('hidden');
-});
+toggleBtn.addEventListener('click', toggleSidebar);
+closeBtn.addEventListener('click', toggleSidebar);
 
-window.addEventListener('resize', visibility);
-
-function visibility() {
-  if (window.innerWidth >= 901) {
-    navPhone.setAttribute('hidden', '');
-  }
+function toggleSidebar() {
+  sidebar.classList.toggle(`show-sidebar`);
 }
