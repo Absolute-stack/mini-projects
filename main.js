@@ -1,10 +1,11 @@
-const sidebar = document.querySelector('aside');
-const toggleBtn = document.querySelector('.toggle-btn');
+const openModalBtn = document.querySelector('button');
 const closeBtn = document.querySelector('.close-btn');
+const modal = document.querySelector('.modal');
 
-toggleBtn.addEventListener('click', toggleSidebar);
-closeBtn.addEventListener('click', toggleSidebar);
+openModalBtn.addEventListener('click', () => {
+  modal.toggleAttribute('hidden');
+});
 
-function toggleSidebar() {
-  sidebar.classList.toggle(`show-sidebar`);
-}
+closeBtn.addEventListener('click', () => {
+  modal.setAttribute('hidden', '');
+});
