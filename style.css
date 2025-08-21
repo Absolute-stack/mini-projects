@@ -53,7 +53,7 @@ body {
   width: 100vw;
   background-color: rgba(0, 0, 255, 0.189);
   visibility: hidden;
-  transition: all 0.4s;
+  transition: all 0.2s;
 }
 
 .modal {
@@ -68,10 +68,11 @@ body {
   background-color: white;
   text-align: center;
 }
-
 .close-btn {
   color: red;
+  font-size: 26px;
   cursor: pointer;
+  background-color: white;
   transition: all ease 0.8s;
 }
 
