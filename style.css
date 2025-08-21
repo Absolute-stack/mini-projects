@@ -1,97 +1,104 @@
 /* Reset */
 
 *,
-*::after,
-*::before {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-img {
-  display: block;
+ul {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
   display: inline-block;
   text-decoration: none;
-}
-
-button {
-  font: inherit;
-}
-
-h1,
-h2 {
-  line-height: 1;
-}
-
-h1,
-h2,
-p {
-  margin: 0;
-  padding: 0;
+  margin-left: 1rem;
 }
 
 /* Utility Classes */
 
-section {
-  padding: 1rem 0;
-}
-
-.container {
-  max-width: 35rem;
-  margin: 0 auto;
-  text-align: center;
-}
-.flow > * + * {
-  margin-top: 0.4rem;
-}
-
 .flex {
   display: flex;
-  flex-direction: column;
+}
+.between {
+  justify-content: space-around;
+}
+.gap {
+  padding-left: 1rem;
+}
+.hide {
+  display: none;
 }
 
-/* General Body Styles */
+/* Geeral Styling */
 
 body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(205, 100%, 96%);
   font-family: 'Playfair Display', serif;
   font-size: 1rem;
-  font-weight: 400;
-  background-color: rgba(224, 255, 255, 0.34);
 }
 
-h1 {
-  margin: 0 auto;
-  max-width: fit-content;
-  padding-bottom: 1rem;
-  border-bottom: 4px solid lightskyblue;
-  border-radius: 4px 4px 4px 4px;
+nav {
+  background-color: white;
 }
 
-.img-container {
-  margin: 0 auto;
-  max-height: 25rem;
-  max-width: 25rem;
-  border-radius: 100%;
-  overflow: hidden;
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.author-img {
-  object-position: 20% 80%;
-  object-fit: cover;
+.nav-mid a {
+  color: #102a42;
+}
+.nav-mid a:hover {
+  color: #49a6e9;
 }
 
-.author-info p {
-  color: lightskyblue;
+.nav-right {
+  font-size: 1.5 rem;
 }
-.next-btn,
-.previous-btn,
-button {
-  color: lightskyblue;
-  cursor: pointer;
+.nav-right a {
+  color: #49a6e9;
 }
 
-button {
-  border: 1px solid lightskyblue;
-  border-radius: 0.5rem;
+.nav-phone ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: white;
+}
+
+.nav-phone a {
+  color: #102a42;
+}
+
+.nav-phone li:hover {
+  width: 100%;
+  background-color: #49a6e933;
+}
+
+.hide-desktop {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .between {
+    justify-content: space-between;
+  }
+
+  .hideOnPhone {
+    display: none;
+  }
+
+  .showOnPhone {
+    display: inline-block;
+  }
 }

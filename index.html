@@ -22,34 +22,47 @@
   </head>
   <body>
     <nav>
-      <ul>
-        <div>
+      <ul class="flex between">
+        <div class="nav-right">
           <li>
             <a href="#"><img src="logo.svg" alt="" /></a>
           </li>
         </div>
-        <div>
+        <div class="nav-mid flex hideOnPhone">
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Projects</a></li>
           <li><a href="#">Contacts</a></li>
         </div>
-        <div>
-          <li>
+        <div class="nav-right flex">
+          <li class="hideOnPhone">
             <a href="#"><i class="fa-brands fa-facebook"></i></a>
           </li>
-          <li>
+          <li class="hideOnPhone">
             <a href="#"><i class="fa-brands fa-discord"></i></a>
           </li>
-          <li>
+          <li class="hideOnPhone">
             <a href="#"><i class="fa-brands fa-twitter"></i></a>
           </li>
+          <li class="hideOnPhone">
+            <a href="#"><i class="fa-brands fa-twitch"></i></a>
+          </li>
           <li>
-            <a href="#"><i class="fa-solid fa-bars"></i></a>
+            <a href="#"
+              ><i class="fa-solid fa-bars toggle-btn hide showOnPhone"></i
+            ></a>
           </li>
         </div>
       </ul>
     </nav>
+    <div class="nav-phone hideOndesktop" hidden>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contacts</a></li>
+      </ul>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
